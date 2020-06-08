@@ -25,7 +25,6 @@ class Hide:
         res = requests.get(url,headers=headers,params=ceshi)
         json_list = json.loads(res.text)['data']
         for i in json_list['list']:
-
             name = i['name']
             artist = i['artist']
             # 文本框
